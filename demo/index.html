@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="ngMenuRouterDemo">
+<head>
+    <meta charset="UTF-8">
+    <title>ngMenuRouter Demo</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+
+    <div class="container text-center" style="max-width: 980px;">
+        <br>
+        <nav class="navbar navbar-default">
+
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">ngMenuRouterDemo</a>
+            </div>
+            <div class="container-fluid">
+                <ul class="nav navbar-nav navbar-right" ng-controller="MenuController as menu">
+                    <li ng-repeat="item in menu.items" ui-sref-active="active">
+                        <a ui-sref="{{item.sref}}" ng-bind="item.name"></a>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+
+        <br>
+        <br>
+
+        <div ui-view="" class="well"></div>
+
+    </div>
+
+    <!-- Vendor assets -->
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-route/angular-route.min.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="bower_components/oclazyload/dist/ocLazyLoad.min.js"></script>
+    <!-- Module source code -->
+    <script src="../source/mr.module.js"></script>
+    <script src="../source/mr.menu.service.js"></script>
+    <script src="../source/mr.router.provider.js"></script>
+    <!-- Demo components -->
+    <script src="components/app.demo.js"></script>
+    <script src="components/home/home.route.js"></script>
+    <script src="components/home/home.menu.js"></script>
+    <script src="components/about/about.route.js"></script>
+    <script src="components/about/about.controller.js"></script>
+
+</body>
+</html>

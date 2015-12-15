@@ -1,0 +1,17 @@
+{
+  "name": "angular-menurouter-demo",
+  "version": "0.0.0",
+  "description": "Menu and Routing modules wrapper",
+  "authors": [
+    "@themicon_co"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "angular": "1.4.8",
+    "angular-route": "1.4.8",
+    "angular-ui-router": "0.2.15",
+    "oclazyload": "1.0.9",
+    "bootstrap": "3.3.6",
+    "AngularJS-Toaster": "angularjs-toaster#~0.4.181"
+  }
+}

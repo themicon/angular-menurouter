@@ -1,0 +1,17 @@
+{
+  "name": "angular-menurouter",
+  "version": "0.0.1",
+  "description": "Menu and Routing modules wrapper",
+  "author": "@themicon_co",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-jsvalidate": "^2.1.0",
+    "gulp-load-plugins": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^1.5.1",
+    "gulp-util": "^3.0.7",
+    "gulp-jshint": "^2.0.0",
+    "jshint-stylish": "^2.1.0"
+  }
+}
